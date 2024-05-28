@@ -4,7 +4,7 @@ const countSlice = createSlice({
   name: "count",
   initialState: {
     value: 0,
-    number: 3,
+    number: 2,
   },
   reducers: {
     increaseCount: (state) => {
@@ -32,5 +32,4 @@ export const {
   decreasrCoundByNumber,
   addNumber,
 } = countSlice.actions;
-// export const selectCount = (state) => state.count.value;
 export default countSlice.reducer;

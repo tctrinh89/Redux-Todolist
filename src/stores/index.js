@@ -5,7 +5,7 @@ import filterSlice from "./features/filterSlice";
 const store = configureStore({
   reducer: {
     count: countSlice,
-    todo: todoSlice,
+    todos: todoSlice,
     filter: filterSlice,
   },
 });

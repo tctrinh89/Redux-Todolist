@@ -15,7 +15,6 @@ const filterSlice = createSlice({
       state.status = action.payload;
     },
     searchFilterPrioty(state, action) {
-      console.log(action.payload);
       state.priorities = action.payload;
     },
   },

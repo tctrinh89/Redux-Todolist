@@ -5,7 +5,6 @@ import {
   addNumber,
   increasrCoundByNumber,
   decreasrCoundByNumber,
-  // selectCount,
 } from "../../stores/features/countSlice";
 import { selectCount } from "../../stores/selecter";
 import { useDispatch, useSelector } from "react-redux";

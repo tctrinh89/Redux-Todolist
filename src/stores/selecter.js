@@ -1,7 +1,7 @@
 import { createSelector } from "@reduxjs/toolkit";
 
 export const selectCount = (state) => state.count.value;
-export const selectTodo = (state) => state.todo;
+export const selectTodo = (state) => state.todos.todos;
 export const selectedFilterText = (state) => state.filter.search;
 
 export const selectFilterRadios = (state) => state.filter.status;

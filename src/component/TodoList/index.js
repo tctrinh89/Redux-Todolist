@@ -2,7 +2,7 @@ import { Col, Row, Input, Button, Select, Tag } from "antd";
 import Todo from "../Todo";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addTodo } from "../../stores/features/todoSlice";
+import { addNewTodo } from "../../stores/features/todoSlice";
 import { returnTodoList } from "../../stores/selecter";
 
 import { v4 as uuidv4 } from "uuid";
@@ -22,14 +22,21 @@ export default function TodoList() {
   };
   const handleButtonAddTodoList = () => {
     dispatch(
-      addTodo({
+      addNewTodo({
         id: uuidv4(),
         name: todoName,
         priority: priority,
-        // status: ,
         completed: false,
       })
     );
+    // dispatch(
+    //   addTodos({
+    //     id: uuidv4(),
+    //     name: todoName,
+    //     priority: priority,
+    //     completed: false,
+    //   })
+    // );
     setTodoName("");
     setPriority("Medium");
   };
